@@ -8,7 +8,9 @@ namespace MIssion_2
 {
     static class Game
     {
+        //Instance variable
         public static int numRolls = 0;
+        
         public static int StartGame()
         {
             Console.WriteLine("Welcome to the dice throwing simulator!");
@@ -16,6 +18,7 @@ namespace MIssion_2
             numRolls = Convert.ToInt32(Console.ReadLine());
             return numRolls;
         }
+        //this function finds the percentage and changes it to asterisks
         public static string[] CalculateResults(int numGameRolls, params int[] rollCount)
         {
             string[] printArray = new string[12];
